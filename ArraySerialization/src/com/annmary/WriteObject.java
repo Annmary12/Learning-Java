@@ -13,6 +13,7 @@ public class WriteObject {
         // write your code here
         System.out.println("Writing objects");
         Person[] people = { new Person(1, "Shridhar"), new Person(2, "Annmary")};
+        Person.setCount(5);
 
         // writing an arrayList
         ArrayList<Person> peopleList = new ArrayList<Person>(Arrays.asList(people));

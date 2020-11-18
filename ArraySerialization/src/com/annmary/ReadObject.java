@@ -11,6 +11,7 @@ public class ReadObject {
         // write your code here
         System.out.println("Reading an object");
 
+        // When deserializing, the object does not run the constructor
         try( FileInputStream fi = new FileInputStream("people.bin")) {
             ObjectInputStream oi = new ObjectInputStream(fi);
 
@@ -21,6 +22,7 @@ public class ReadObject {
 
             for(Person person: people){
                 System.out.println(person);
+                System.out.println( Person.getCount());
             }
 
             for(Person person: peopleList){
