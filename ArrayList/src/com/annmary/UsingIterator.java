@@ -19,7 +19,7 @@ public class UsingIterator {
       String value = animals2.next();
       System.out.println(value);
 
-      if(animals2.equals("goat")){
+      if(value.equals("goat")){
         animals2.remove();
       }
 
